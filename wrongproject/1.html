@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>易错系统</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1><img src="http://www.qfedu.com/images/new_logo.png">
+            <small class="h3">易错系统</small></h1>
+        </div>
+    </div>
+    <!-- 弹出模态框：写入问题 -->
+    <div class="container">
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                添加易错信息
+            </button>
+        </p>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">请认真填写易错信息</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">标题</label>
+                            <input type="text" class="form-control" id="title" placeholder="问题标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="question">问题描述</label>
+                            <input type="text" class="form-control" id="question" placeholder="请输入详细的问题描述">
+                        </div>
+                        <div class="form-group">
+                            <label for="solve">解决方案</label>
+                            <input type="text" class="form-control" id="solve" placeholder="请输入详细的解决方案">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btn" class="btn btn-success center-block" data-dismiss="modal">提交问题</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">请认真修改易错信息</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title1">标题</label>
+                            <input type="text" class="form-control" id="title1" placeholder="问题标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="question1">问题描述</label>
+                            <input type="text" class="form-control" id="question1" placeholder="请输入详细的问题描述">
+                        </div>
+                        <div class="form-group">
+                            <label for="solve1">解决方案</label>
+                            <input type="text" class="form-control" id="solve1" placeholder="请输入详细的解决方案">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btn1" class="btn btn-success center-block" data-dismiss="modal">确认修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 显示表格 -->
+    <div class="container">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr style="background: #ccc;">
+                    <th>编号</th>
+                    <th>标题</th>
+                    <th class="col-md-3">问题描述</th>
+                    <th class="col-md-3">解决方案</th>
+                    <th>上传时间</th>
+                    <th>删除</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
+    </div>
+   
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ajaxfunction.js"></script>
+    <script type="text/javascript" src="js/1.js"></script>
+</body>
+
+</html>
